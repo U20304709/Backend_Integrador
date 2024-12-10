@@ -99,7 +99,7 @@ public class SecurityConfiguration {
         UrlBasedCorsConfigurationSource source = new UrlBasedCorsConfigurationSource();
         CorsConfiguration configuration = new CorsConfiguration();
         configuration.setAllowedOriginPatterns(allowedOrigins);
-        configuration.addAllowedOrigin("https://frontendintegrador-production.up.railway.app/");
+        configuration.addAllowedOrigin("https://frontendintegrador-production.up.railway.app:8080");
         configuration.setAllowedHeaders(Arrays.asList(
                 HttpHeaders.AUTHORIZATION,
                 HttpHeaders.CONTENT_TYPE,
